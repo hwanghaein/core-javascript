@@ -51,10 +51,23 @@ if(userName === 'Admin'){
 
 
 
+/* 
 
+let username = prompt("이름내놔");
 
-
-
+if (username.toLowerCase() === "admin") {
+  let password = prompt("비번ㄱ");
+  if (password.toLowerCase() === "themaster") {
+    console.log("코드 좀 치네 ㅋㅋ");
+  } else {
+    console.log("맞겠냐? ㅋㅋ");
+  }
+} else if (username === "" 오어 username === null) {
+  console.log("ㅋㅋ");
+} else {
+  console.log("ㅉㅉ");
+}
+ */
 
 
 
