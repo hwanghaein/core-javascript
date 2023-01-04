@@ -51,7 +51,7 @@ console.log(first.nextSibling);
 
 
 // 함수 이용 next(first) ->second
-function next(node){
+function next(node){ 
 
   do{
     node = node.nextSibling;

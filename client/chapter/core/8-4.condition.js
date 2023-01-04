@@ -2,7 +2,7 @@
 /* Nullish Coalescing Operator                                            */
 /* ---------------------------------------------------------------------- */
 
-let emailAddress;
+let emailAddress; 
 let receivedEmailAddress;
 
 if (emailAddress === undefined || emailAddress === null) {
