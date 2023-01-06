@@ -17,7 +17,7 @@ const portableFan = {
 };
 
 // 아래 코드는 문제가 있어 런타임 중 오류가 발생합니다.
-console.log(portableFan.photos.animate);
+console.log(portableFan?.photos?.animate);
 
 // 오류를 발생시키지 않으려면 아래와 같이 작성해야 합니다.
 // if ('photos' in portableFan) {
@@ -37,4 +37,52 @@ console.log(portableFan.photos.animate);
 
 
 // 객체의 프로퍼티 접근 시, 옵셔널 체이닝을 사용해봅니다.
+
+
+
+
+// 타이머 
+setTimeout(()=>{
+  
+  const button = /* html */`
+    <button type="button">click me!</button>
+  `
+
+  document.body.insertAdjacentHTML('beforeend',button);
+
+},3000)  // ms 
+
+
+document.querySelector('button')?.addEventListener('click',function(){
+  console.log('hit');
+})
+
+
+
+// 반복 타이머 
+// setInterval(() => {
+//   console.log('난 인터벌이야');
+// }, 1000);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
