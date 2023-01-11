@@ -1,3 +1,5 @@
+//'beforebegin' : elem 바로 앞에 html을 삽입
+
 function insertBefore(node, text) {
   if (typeof node === 'string') node = getNode(node);
 
@@ -8,6 +10,9 @@ function insertBefore(node, text) {
   node.insertAdjacentHTML('beforebegin', text);
 }
 
+
+// 'afterbegin' : elem의 첫 번째 자식 요소 바로 앞에 html을 삽입
+
 function insertFirst(node, text) {
   if (typeof node === 'string') node = getNode(node);
   if (node.nodeType !== document.ELEMENT_NODE) {
@@ -17,6 +22,9 @@ function insertFirst(node, text) {
   node.insertAdjacentHTML('afterbegin', text);
 }
 
+
+// 'beforeend' : elem의 마지막 자식 요소 바로 다음에 html을 삽입
+
 function insertLast(node, text) {
   if (typeof node === 'string') node = getNode(node);
   if (node.nodeType !== document.ELEMENT_NODE) {
@@ -24,6 +32,9 @@ function insertLast(node, text) {
   }
   node.insertAdjacentHTML('beforeend', text);
 }
+
+
+//'afterend' : elem 바로 다음에 html을 삽입합니다.
 
 function insertAfter(node, text) {
   if (typeof node === 'string') node = getNode(node);
